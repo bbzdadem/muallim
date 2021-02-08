@@ -1,0 +1,129 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Muallim.az</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="web_logo" id="logo"> </a>
+        <ul class="header_list">
+            <li class="header_list_item"><a class="header_list_item_links" href="#">Categories</a></li>
+            <li class="header_list_item"><a class="header_list_item_links" href="#">Explore</a></li>
+            <li class="header_list_item"><a class="header_list_item_links" href="#">Become a Teacher</a></li>
+            <li class="header_list_item"><a class="header_list_item_links" href="#">Sign in</a></li>
+            <li class="header_list_item"><a id="join" class="header_list_item_links" onclick="show()">Join</a></li>
+        </ul>
+    </header>
+
+    <section class="web_banner">
+        <div id="banner_background" class="banner_background">
+            <div class="banner_parts">
+                <h3>Find the perfect <i>freelance</i> services for your business</h3>
+                <div class="banner_searchbar">
+                    <div class="banner_searchbar_icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="banner_parts"></div>
+        </div>
+    </section>
+
+
+
+
+    <div id="modal-wrapper" class="modal">
+        <div id="join_first">
+            <form class="modal-content animate">
+                <div class="form_input_first">
+                    <div class="imgcontainer">
+                        <h2 style="text-align:center">Join Muallim</h2>
+                    </div>
+
+                    <div class="container">
+                        <input type="mail" placeholder="Enter your email" name="email">
+                        <button onclick="shownd()">Continue</button>
+                        <p class="modal_termsinfo">By joining I agree to receive emails from Muallim.</p>
+                        <br>
+                        <hr>
+                        <br>
+                        <p class="modal_termsinfo">Already have an account? <a class="terms_link" href="#">Sign in</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="join_second">
+            <form class="modal-content animate">
+                <div class="form_input_second">
+                    <div class="imgcontainer">
+                        <h1 style="text-align:center">Join Muallim</h1>
+                    </div>
+
+                    <div class="container">
+                        <input type="text" placeholder="Enter your username" name="uname">
+                        <input type="password" placeholder="Enter your password" name="psw">
+                        <button>Join</button>
+                        <p class="modal_termsinfo">By joining, you agree to Fiverr’s Terms of Service, as well as to receive occasional emails from us.</p>
+                        <p class="modal_termsinfo">Already have an account? <a class="terms_link" href="#">Sign in</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- <div id="modal-wrapper" class="modal">
+        <form class="modal-content animate">
+            <div class="form_input_first">
+                <div class="imgcontainer">
+                    <h2 style="text-align:center">Join Muallim</h2>
+                </div>
+
+                <div class="container">
+                    <input type="mail" placeholder="Enter your email" name="email">
+                    <button onclick="shownd()">Continue</button>
+                    <p class="modal_termsinfo">By joining I agree to receive emails from Muallim.</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <p class="modal_termsinfo">Already have an account? <a class="terms_link" href="#">Sign in</a></p>
+                </div>
+            </div>
+        </form>
+    </div> -->
+
+
+
+</body>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+    var images = ['1.jpg ', '2.jpg ', '3.jpg '];
+    $(function() {
+        var i = 0;
+        $("#banner_background").css("background-image", "url(assets/images/" + images[i] + ")");
+        setInterval(function() {
+            i++;
+            if (i == images.length) {
+                i = 0;
+            }
+            $("#banner_background").animate({
+                left: '100% '
+            }, function() {
+                $(this).css("background-image", "url(assets/images/" + images[i] + ")");
+                $(this).animate({
+                    left: '100% '
+                });
+            });
+        }, 5000);
+    });
+</script>
+
+</html>
