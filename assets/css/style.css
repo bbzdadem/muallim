@@ -4,8 +4,16 @@
     margin: 0px;
 }
 
+*:focus {
+    outline: none !important;
+}
+
+h1 {
+    color: #414A4D;
+}
+
 header {
-    background-color: black;
+    background-color: transparent;
     position: fixed;
     top: 0;
     left: 0;
@@ -15,6 +23,7 @@ header {
     align-items: center;
     transition: 0.6s ease-in-out;
     height: 6em;
+    z-index: 1;
 }
 
 header.sticky {
@@ -28,6 +37,7 @@ header.sticky {
     align-items: center;
     transition: 0.6s ease-in-out;
     height: 6em;
+    z-index: 1;
 }
 
 header.sticky a {
@@ -88,6 +98,11 @@ header ul li a#join {
     border: 1px solid white !important;
     padding: 6px 14px 6px 14px;
     border-radius: 2px;
+    cursor: pointer;
+}
+
+#sign {
+    cursor: pointer;
 }
 
 header ul li a#join:hover {
@@ -102,36 +117,106 @@ header ul li a#join:hover {
     padding: 6px 14px 6px 14px;
     border-radius: 2px;
     background-color: #0048ff;
+    cursor: pointer;
+}
+
+header.sticky ul li a#join {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: 0.6s ease-in-out;
+    border: 1px solid black !important;
+    padding: 6px 14px 6px 14px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+header.sticky ul li a#join:hover {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    border: 1px solid transparent !important;
+    padding: 6px 14px 6px 14px;
+    border-radius: 2px;
+    background-color: #0048ff;
+    cursor: pointer;
 }
 
 h3 {
     color: #0048ff;
 }
 
-section.web_banner {
+div.web_banner {
     width: 100%;
-    height: 38em;
+    height: 620px;
     justify-content: space-between;
     align-items: center;
-    transition: 0.6s;
-    margin-top: 6em;
 }
 
 .banner_background {
     width: 100%;
-    height: 38em;
+    height: 512px;
     transition: 1s ease-in-out;
-    background-repeat: no-repeat;
     background-size: cover;
+    background: no-repeat center center cover;
+    padding-top: 6em;
 }
 
 div.banner_parts {
-    width: 50%;
+    width: 55vw;
 }
 
 .banner_background h3 {
-    font-size: 42px;
+    font-size: 38px;
     color: #fff;
+    text-align: left;
+    margin: 12% 0% 0% 6.5%;
+    width: 18em;
+}
+
+.banner_searchbar {
+    width: 50vw;
+    height: 50px;
+    background-color: white;
+    margin-left: 6.5%;
+    margin-top: 4%;
+    border-radius: 6px;
+    display: flex;
+    min-width: 42em;
+}
+
+.banner_searchbar_icon {
+    width: 42px;
+}
+
+img.searchbar_icon {
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    margin-top: 18%;
+    margin-left: 10%;
+    opacity: 0.7;
+}
+
+.banner_search_input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0% !important;
+    display: inline-block;
+    border: none !important;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-left: -1% !important;
+    margin-top: 0.5% !important;
 }
 
 input[type=text],
@@ -145,8 +230,8 @@ input[type=password] {
     font-size: 16px;
 }
 
-button {
-    background-color: #4CAF50;
+button.login_button {
+    background-color: #0048ff;
     color: white;
     padding: 14px 20px;
     margin: 8px 26px;
@@ -154,6 +239,19 @@ button {
     cursor: pointer;
     width: 90%;
     font-size: 20px;
+}
+
+button.banner_search_button {
+    background-color: #0048ff;
+    font-weight: 600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    font-size: 18px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden !important;
 }
 
 button:hover {
@@ -173,20 +271,13 @@ input[type=password] {
     border-radius: 4px;
 }
 
-button {
-    background-color: #0048ff;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 6.8%;
-    border: none;
-    cursor: pointer;
-    width: 86%;
-    font-size: 20px;
-    border-radius: 4px;
+input:focus,
+button:focus {
+    outline: none;
 }
 
-button:hover {
-    opacity: 0.8;
+button:focus {
+    background-color: #888;
 }
 
 .imgcontainer {
@@ -217,7 +308,7 @@ button:hover {
     background-color: #fefefe;
     margin: 8% auto 15% auto;
     border: 1px solid #888;
-    width: 25%;
+    width: 27%;
     padding-bottom: 20px;
     border-radius: 1.5%;
 }
@@ -228,7 +319,11 @@ button:hover {
 
 p.modal_termsinfo {
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 p a.terms_link {
@@ -266,4 +361,81 @@ hr {
     to {
         transform: scale(1)
     }
+}
+
+.baner_trends_list {
+    width: 100%;
+    display: flex;
+    margin: 3% 0% 0% 6.5%;
+    color: white;
+}
+
+.popular_tag {
+    padding-top: 5px;
+    margin-right: 2%;
+    font-weight: 550;
+}
+
+.popular_tag_list {
+    padding: 5px 15px 5px 15px;
+    border: 1.5px solid white;
+    border-radius: 20px;
+    margin-right: 2%;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.popular_tag_list:hover {
+    padding: 5px 15px 5px 15px;
+    border: 1.5px solid white;
+    border-radius: 20px;
+    margin-right: 2%;
+    font-weight: 550;
+    background-color: white;
+    color: #414A4D;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.services-slider {
+    margin-top: 40px;
+}
+
+.homepage_slider {
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    height: 30em;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+.slider-header {
+    margin-left: 2.5%;
+    margin-bottom: 20px;
+}
+
+.slider_content {
+    cursor: pointer;
+}
+
+.slider_content_background {
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.background-name {
+    position: absolute;
+    top: 20;
+    color: white;
+    margin-left: 1.1%;
+}
+
+h3.forgot-pass {
+    text-align: right;
+    opacity: 0.6;
+    font-size: 14px;
+    margin-right: 30px;
+    margin-bottom: 6px;
 }
