@@ -3,7 +3,9 @@
     padding: 0px;
     margin: 0px;
 }
-
+body {
+    overflow-x: hidden;
+}
 *:focus {
     outline: none !important;
 }
@@ -43,9 +45,16 @@ header.sticky {
 header.sticky a {
     color: #000000;
     text-decoration: none;
-    letter-spacing: 1px;
-    font-weight: 500;
-    transition: 0.6s ease-in-out;
+    font-weight: 550;
+    transition: 0.3s ease-in-out;
+}
+
+
+header.sticky a:hover {
+    color: #0048ff;
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.3s ease-in-out;
 }
 
 header .web_logo {
@@ -82,9 +91,8 @@ header ul li a {
     margin: 0 15px;
     text-decoration: none;
     color: #fff;
-    letter-spacing: 1px;
-    font-weight: 500;
-    transition: 0.6s ease-in-out;
+    font-weight: 550;
+    transition: 0.3s ease-in-out;
 }
 
 header ul li a#join {
@@ -92,8 +100,7 @@ header ul li a#join {
     margin: 0 15px;
     text-decoration: none;
     color: #fff;
-    letter-spacing: 1px;
-    font-weight: 500;
+    font-weight: 550;
     transition: 0.6s ease-in-out;
     border: 1px solid white !important;
     padding: 6px 14px 6px 14px;
@@ -110,8 +117,7 @@ header ul li a#join:hover {
     margin: 0 15px;
     text-decoration: none;
     color: #fff;
-    letter-spacing: 1px;
-    font-weight: 500;
+    font-weight: 550;
     transition: 0.3s ease-in-out;
     border: 1px solid transparent !important;
     padding: 6px 14px 6px 14px;
@@ -125,8 +131,7 @@ header.sticky ul li a#join {
     margin: 0 15px;
     text-decoration: none;
     color: #000000;
-    letter-spacing: 1px;
-    font-weight: 500;
+    font-weight: 550;
     transition: 0.6s ease-in-out;
     border: 1px solid black !important;
     padding: 6px 14px 6px 14px;
@@ -139,8 +144,7 @@ header.sticky ul li a#join:hover {
     margin: 0 15px;
     text-decoration: none;
     color: #fff;
-    letter-spacing: 1px;
-    font-weight: 500;
+    font-weight: 550;
     transition: 0.3s ease-in-out;
     border: 1px solid transparent !important;
     padding: 6px 14px 6px 14px;
@@ -308,9 +312,10 @@ button:focus {
     background-color: #fefefe;
     margin: 8% auto 15% auto;
     border: 1px solid #888;
-    width: 27%;
+    width: 27% !important;
     padding-bottom: 20px;
     border-radius: 1.5%;
+    height: auto !important;
 }
 
 #join_second {
@@ -439,3 +444,315 @@ h3.forgot-pass {
     margin-right: 30px;
     margin-bottom: 6px;
 }
+
+.student-profile header {
+    background-color: black;
+}
+
+.profile-section {
+    background-color: #eee;
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 6em;
+}
+
+.leftsection {
+    margin-top: 6em;
+    margin-left: 6em;
+    width: 30%;
+    height: auto;
+    max-height: 1000px;
+}
+
+.leftsection img {
+    width: 70%;
+}
+
+.leftsection h4 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+.rightsection {
+    width: 70%;
+    margin-top: 6em;
+}
+
+.rightsection h3 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 600;
+    color: #222;
+}
+
+.enrolledcourses {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+}
+
+.enrolledcourses img {
+    width: 16%;
+    margin: auto;
+    margin-left: 0;
+    border-radius: 20px;
+}
+
+
+
+
+.become_teacher_cc {
+    margin-top: 10%;
+}
+.become-teacher-h1 {
+    color: #fff;
+    font-size: 50px;
+    line-height: 110%;
+    text-align: center;
+}
+
+.becom-teacher-p {
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.become-teacher-button{
+    background-color: #0048ff;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 15px 35px;
+    display: inline-block;
+    border-radius: 3px;
+    box-sizing: border-box;
+    -webkit-transition: color .2s,background-color .2s,box-shadow .2s,border .2s;
+    transition: color .2s,background-color .2s,box-shadow .2s,border .2s;
+    text-align: center;
+    margin-left: 43%;
+    margin-right: 42%;
+    margin-top: 2%;
+}
+
+
+.fullWidth {
+    width: 100% !important;
+    display: table;
+    float: none;
+    padding: 0;
+    min-height: 1px;
+    height: 300px;
+    position: relative;
+    color: #222 !important;
+    margin-top: -2% !important;
+  }
+  
+  
+  .sectiontitle {
+    background-position: center;
+    margin: 30px 0 0px;
+    text-align: center;
+    min-height: 20px;
+  }
+  
+  .sectiontitle h2 {
+    font-size: 30px;
+    color: #222;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  
+  .headerLine {
+    width: 160px;
+    height: 2px;
+    display: inline-block;
+    background: #1dbf73;
+  }
+  
+  
+  .projectFactsWrap{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #222;
+
+  }
+  
+  
+  #projectFacts .fullWidth{
+    padding: 0;
+  }
+  
+  .projectFactsWrap .item{
+    width: 25%;
+    height: 100%;
+    padding: 50px 0px;
+    text-align: center;
+    
+  }
+  
+  .projectFactsWrap .item:nth-child(1){
+    background: #eee;
+  }
+  
+  .projectFactsWrap .item:nth-child(2){
+    background: #eee;
+  }
+  
+  .projectFactsWrap .item:nth-child(3){
+    background: #eee;
+  }
+  
+  .projectFactsWrap .item:nth-child(4){
+    background: #eee;
+  }
+  
+  .projectFactsWrap .item p.number{
+    font-size: 40px;
+    padding: 0;
+    font-weight: bold;
+  }
+  
+  .projectFactsWrap .item p{
+    color: #222;
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Open Sans';
+  }
+  
+  
+  .projectFactsWrap .item span{
+    width: 60px;
+    background: black;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  
+  .projectFactsWrap .item i{
+    vertical-align: middle;
+    font-size: 50px;
+    color: black;
+  }
+  
+  
+  .projectFactsWrap .item:hover i, .projectFactsWrap .item:hover p{
+    color:black;
+  }
+  
+  .projectFactsWrap .item:hover span{
+    background: #222;
+  }
+
+  
+  .footer-clean {
+    padding:50px 0;
+    background-color:#fff;
+    color:#4b4c4d;
+  }
+  
+  .footer-clean h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-clean ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-clean .item.social {
+    text-align:right;
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-clean .item.social {
+      text-align:center;
+    }
+  }
+  
+  .footer-clean .item.social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin-left:10px;
+    margin-top:22px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-clean .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  @media (max-width:991px) {
+    .footer-clean .item.social > a {
+      margin-top:40px;
+    }
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item.social > a {
+      margin-top:10px;
+    }
+  }
+  
+  .footer-clean .copyright {
+    margin-top:14px;
+    margin-bottom:0;
+    font-size:13px;
+    opacity:0.6;
+  }
+  
+  .masonry-image {
+      margin: auto;
+      width: 100%;
+      padding: auto;
+  }
+
+  .ending-section h2 {
+      font-size: 24px;
+      text-align: center;
+      color: #414A4D;
+      font-weight: 600;
+      margin-bottom: 1px;
+  }

@@ -1,30 +1,37 @@
 let lg = document.getElementById("logo");
-lg.innerHTML = '<img src="assets/images/logo-wh.png">';
+lg.innerHTML = '<a href="index.html"><img src="assets/images/logo-wh.png"></a>';
 
 window.addEventListener("scroll", function() {
     var header = document.querySelector("header");
     var logodiv = document.getElementById("logo")
     header.classList.toggle("sticky", window.scrollY > 0)
     if (header.classList.contains("sticky")) {
-        logodiv.innerHTML = '<img src="assets/images/logo.png">';
+        logodiv.innerHTML = '<a href="index.html"><img src="assets/images/logo.png"></a>';
     } else {
-        logodiv.innerHTML = '<img src="assets/images/logo-wh.png">';
+        logodiv.innerHTML = '<a href="index.html"><img src="assets/images/logo-wh.png"></a>';
     }
 })
 
 var modal = document.getElementById("modal-wrapper");
 var modalsecond = document.getElementById("modal-wrapper-sec");
 var modalthird = document.getElementById("modal-wrapper-thr");
+var modalmuallim = document.getElementById("modal-wrapper-muallim");
 window.onclick = function(event) {
-    if (event.target == modal || event.target == modalsecond || event.target == modalthird) {
+    if (event.target == modal || event.target == modalsecond || event.target == modalthird || event.target == modalmuallim) {
         modal.style.display = "none";
         modalsecond.style.display = "none";
         modalthird.style.display = "none";
+        modalmuallim.style.display = "none";
     }
 }
 
 function show() {
     document.getElementById('modal-wrapper').style.display = 'block'
+}
+
+
+function showmuallim() {
+    document.getElementById('modal-wrapper-muallim').style.display = 'block'
 }
 
 function showsign() {
@@ -67,3 +74,4 @@ function showrd() {
         x.style.display = 'block'
     }
 }
+

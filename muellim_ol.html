@@ -1,0 +1,330 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/tiny-slider.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <title>Muallim.az</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="web_logo" id="logo"> </a>
+        <ul class="header_list">
+            <li class="header_list_item"><a class="header_list_item_links" href="#">Categories</a></li>
+            <li class="header_list_item"><a class="header_list_item_links" href="#">Explore</a></li>
+            <li class="header_list_item"><a class="header_list_item_links" href="#">Become a Teacher</a></li>
+            <li class="header_list_item"><a id="sign" class="header_list_item_links" onclick="showsign()">Sign in</a></li>
+            <li class="header_list_item"><a id="join" class="header_list_item_links" onclick="show()">Join</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <div id="banner_background" class="banner_background">
+
+            <div class="become_teacher_cc">
+                <h1 class="become-teacher-h1">
+                    Work Your Way
+                </h1>
+                <p class="becom-teacher-p">You bring the skill. We'll make earning easy.</p>
+                <button onclick="showmuallim()" class="become-teacher-button">Become a Teacher</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="projectFacts" class="sectionClass">
+        <div class="fullWidth eight columns">
+            <div class="projectFactsWrap ">
+                <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
+                    <i class="fa fa-briefcase"></i>
+                    <p id="number1" class="number">12</p>
+                    <span></span>
+                    <p>Projects done</p>
+                </div>
+                <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;">
+                    <i class="fa fa-smile-o"></i>
+                    <p id="number2" class="number">55</p>
+                    <span></span>
+                    <p>Projects done</p>
+                </div>
+                <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
+                    <i class="fa fa-coffee"></i>
+                    <p id="number3" class="number">359</p>
+                    <span></span>
+                    <p>Projects done</p>
+                </div>
+                <div class="item wow fadeInUpBig animated animated" data-number="246" style="visibility: visible;">
+                    <i class="fa fa-camera"></i>
+                    <p id="number4" class="number">246</p>
+                    <span></span>
+                    <p>Projects done</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="masonry">
+        <img class="masonry-image" src="assets/images/masonry.png">
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+  
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+        </div>
+        <div class="col-md-5">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+  
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+
+
+      <div class="ending-section">
+        <h2>Sign up and create your first Course today</h2>
+        <button class="become-teacher-button" onclick="showmuallim()">Become a Teacher</button>
+
+      </div>
+
+
+      <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Legacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li><a href="#">Job openings</a></li>
+                            <li><a href="#">Employee success</a></li>
+                            <li><a href="#">Benefits</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">Company Name © 2018</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Sign up -->
+    <div id="modal-wrapper" class="modal">
+        <form class="modal-content animate">
+            <div class="imgcontainer">
+                <h2 style="text-align:center">Join Muallim</h2>
+            </div>
+
+            <div class="container">
+                <input required type="text" placeholder="Enter your fullname" name="ufullname">
+                <input required type="text" placeholder="Enter your number" name="unumber">
+                <input required type="mail" placeholder="Enter your email" name="email">
+                <input required type="text" placeholder="Enter your username" name="uname">
+                <input required type="password" placeholder="Enter your password" name="psw">
+                <button class="login_button">Continue</button>
+                <p class="modal_termsinfo">By joining, you agree to Muallim’s Terms of Service, as well as to receive occasional emails from us.</p>
+                <br>
+                <hr>
+                <br>
+                <p class="modal_termsinfo">Already have an account? <a class="terms_link" id="sign" onclick="shownd()">Sign in</a></p>
+            </div>
+        </form>
+    </div>
+    <!-- Sign in -->
+    <div id="modal-wrapper-sec" class="modal">
+        <form class="modal-content animate">
+            <div class="imgcontainer">
+                <h2 style="text-align:center">Sign in to Muallim</h2>
+            </div>
+
+            <div class="container">
+                <input required type="mail" placeholder="Enter your email" name="email">
+                <input required type="password" placeholder="Enter your password" name="psw">
+                <h3 id="sign" onclick="showfrgt()" class="forgot-pass">Forgot password?</h3>
+                <button class="login_button" onclick="shownd()">Sign in</button>
+                <p class="modal_termsinfo">By joining I agree to receive emails from Muallim.</p>
+                <br>
+                <hr>
+                <br>
+                <p class="modal_termsinfo">Dont you have an account? <a id="sign" class="terms_link" onclick="showrd()">Join</a></p>
+            </div>
+        </form>
+    </div>
+    <!-- Forgot password -->
+    <div id="modal-wrapper-thr" class="modal">
+        <form class="modal-content animate">
+            <div class="imgcontainer">
+                <h2 style="text-align:center">Sign in to Muallim</h2>
+            </div>
+
+            <div class="container">
+                <input type="mail" placeholder="Enter your email" name="email" required>
+
+                <button class="login_button" onclick="shownd()">Submit</button>
+                <br>
+                <hr>
+                <br>
+                <p class="modal_termsinfo"><a class="terms_link" id="sign" onclick="hidefrgt()">Back to Sign in</a></p>
+            </div>
+        </form>
+    </div>
+<!--Muallim ol-->
+    <div id="modal-wrapper-muallim" class="modal">
+        <form class="modal-content animate">
+            <div class="imgcontainer">
+                <h2 style="text-align:center">Become Muallim</h2>
+            </div>
+
+            <div class="container">
+                <input required type="text" placeholder="Enter your fullname" name="ufullname">
+                <input required type="text" placeholder="Enter your number" name="unumber">
+                <input required type="mail" placeholder="Enter your email" name="email">
+                <input required type="text" placeholder="Enter your username" name="uname">
+                <input required type="password" placeholder="Enter your password" name="psw">
+                <button class="login_button">Continue</button>
+                <p class="modal_termsinfo">By joining, you agree to Muallim’s Terms of Service, as well as to receive occasional emails from us.</p>
+                <hr>
+                <p class="modal_termsinfo">Already have an account? <a class="terms_link" id="sign" onclick="shownd()">Sign in</a></p>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+</body>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="assets/js/tiny-slider.js"></script>
+<script type="text/javascript">
+    var images = ['1.jpg ', '2.jpg ', '3.jpg '];
+    $(function() {
+        var i = 0;
+        $("#banner_background").css("background-image", "url(assets/images/" + images[i] + ")");
+        setInterval(function() {
+            i++;
+            if (i == images.length) {
+                i = 0;
+            }
+            $("#banner_background").animate({
+                left: '100% '
+            }, function() {
+                $(this).css("background-image", "url(assets/images/" + images[i] + ")");
+                $(this).animate({
+                    left: '100% '
+                });
+            });
+        }, 5000);
+    });
+</script>
+
+<script type="text/javascript">
+    $.fn.jQuerySimpleCounter = function( options ) {
+	    var settings = $.extend({
+	        start:  0,
+	        end:    100,
+	        easing: 'swing',
+	        duration: 400,
+	        complete: ''
+	    }, options );
+
+	    var thisElement = $(this);
+
+	    $({count: settings.start}).animate({count: settings.end}, {
+			duration: settings.duration,
+			easing: settings.easing,
+			step: function() {
+				var mathCount = Math.ceil(this.count);
+				thisElement.text(mathCount);
+			},
+			complete: settings.complete
+		});
+	};
+
+
+$('#number1').jQuerySimpleCounter({end: 12,duration: 3000});
+$('#number2').jQuerySimpleCounter({end: 55,duration: 3000});
+$('#number3').jQuerySimpleCounter({end: 359,duration: 2000});
+$('#number4').jQuerySimpleCounter({end: 246,duration: 2500});
+</script>
+
+<script type="text/javascript">
+var grid = document.querySelector('.grid');
+
+var msnry = new Masonry( grid, {
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+});
+
+imagesLoaded( grid ).on( 'progress', function() {
+  // layout Masonry after each image loads
+  msnry.layout();
+});
+</script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/js/slick.min.js"></script>
+<script type="text/javascript">
+    $('.autoplay').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+</script>
+
+
+</html>
